@@ -1,0 +1,22 @@
+.post {
+  padding: 10px 10px 40px;
+  margin-bottom: 10px;
+  background-color: #d3d3d3;
+  border: 1px solid #6A5ACD;
+  border-radius: 20px;
+  h2 {
+    color: #6A5ACD
+  }
+  h5 {
+    color: #696969
+  }
+  button {
+    float: right;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="posts-content">
+  <div class="posts-header">
+    <div class="logo">
+      <h1>QBlog</h1>
+    </div>
+  </div>
+  <div class="search-area">
+    <input type="text" (keyup)="search($event)" placeholder="Search..." #searchString>
+    <button (click)="onButtonSearch(searchString.value)">Get search!</button>
+  </div>
+  <div class="posts-boxes" *ngFor="let post of posts">
+    <app-post [postInfo]="post"></app-post>
+  </div>
+</div>
+

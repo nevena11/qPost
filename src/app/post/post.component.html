@@ -1,0 +1,8 @@
+<div class="post" *ngIf="postInfo">
+  <h2>{{postInfo.name}}</h2>
+  <h6 class="card-subtitle mb-2 text-muted">{{postInfo.title}}</h6>
+  <h5>{{postInfo.content}}</h5>
+  <div>
+    <button (click)="viewDetails(postInfo.id)">View Post </button>
+  </div>
+</div>

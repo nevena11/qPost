@@ -1,0 +1,13 @@
+<div class="view-post-details-container" *ngIf="postDetailsInfo">
+  <div class="single-post">
+    <button data-testid="back-to-posts-button" (click)="backToPosts()">Back to posts</button>
+    <h2>{{postDetailsInfo.name}}</h2>
+    <h6>{{postDetailsInfo.title}}</h6>
+    <h5>{{postDetailsInfo.content}}</h5>
+  </div>
+  <div class="comment-container" *ngFor="let comment of postDetailsInfo.comments">
+    <p>{{comment.name}}</p>
+    <p>{{comment.email}}</p>
+    <p>{{comment.content}}</p>
+  </div>
+</div>

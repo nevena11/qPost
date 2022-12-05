@@ -1,0 +1,36 @@
+.posts-content {
+  margin: 20px;
+  .posts-header {
+    .logo, .search-input {
+      display: inline-block;
+      height: 100px;
+      width: 90%;
+      }
+  }
+  input {
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px 10px 0px;
+    width: 78%;
+  }
+  .search-area {
+    width: 50%;
+    margin: auto;
+    button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+  .posts-boxes {
+    width: 50%;
+    margin: auto;
+  }
+}
