@@ -58,5 +58,10 @@ export interface IPosts {
   id: number,
   name?: string,
   title: string,
-  content: string
+  content: string,
+  comments?: {
+    name: string,
+    email: string,
+    content: string
+  }[]
 }

@@ -5,4 +5,11 @@
   <div>
     <button (click)="viewDetails(postInfo.id)">View Post </button>
   </div>
+  <div>
+    <button (click)="viewComments(postInfo.id)">{{viewOrHideComments}}</button>
+  </div>
+  <div class="posts-comments" *ngFor="let comment of postInfo.comments">
+    <h4 class="comment-name">{{comment.name}}</h4>
+    <h5>{{comment.content}}</h5>
+  </div>
 </div>
